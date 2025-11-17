@@ -260,7 +260,7 @@ jobs:
         uses: dev-drprasad/delete-older-releases@v0.3.4
         if: env.UPLOAD_RELEASE == 'true' && !cancelled()
         with:
-          keep_latest: 15
+          keep_latest: 3
           delete_tags: true
           release_name_prefix: "Cudy-tr3000-v1_512M-"
         env:
